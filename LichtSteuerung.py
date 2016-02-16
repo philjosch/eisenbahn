@@ -12,6 +12,7 @@ class LichtSteuerung(Tk):
         self.title("Lichtsteuerung fuer die Eisenbahn")
         
         self.geometry("400x400")
+        ## Das Fenster ist noch etwas klein, das sollte man vielleicht anpassen!!
 
         self.__port = port
         self.__bus = SMBus(self.__port)
