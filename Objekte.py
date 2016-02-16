@@ -86,7 +86,9 @@ class ComplexLichtObjekt(LichtObjekt):
             self._Button.config(text="Anschalten", state=NORMAL)
             self._on = False
 
-
+class StralatLichtObjekt(LichtObjekt):
+    def __init__(self):
+        pass
 
 
 class DelayedShutdown(threading.Thread):
