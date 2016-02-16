@@ -75,10 +75,11 @@ class LichtSteuerung(Tk):
 
     def random(self):
         for i in self.__objects:
-            if (random.random() < 0.5):
-                i.switchOn()
-            else:
-                i.switchOff()
+            if (i != self.__stralat):
+                if (random.random() < 0.5):
+                    i.switchOn()
+                else:
+                    i.switchOff()
 
 
 if __name__ == "__main__":
